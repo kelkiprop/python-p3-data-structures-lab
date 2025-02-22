@@ -18,6 +18,7 @@ spicy_foods = [
 
 def get_names(spicy_foods):
     return [food["name"] for food in spicy_foods]
+print(get_names(spicy_foods))
 def get_spiciest_foods(spicy_foods):
     return [food for food in spicy_foods if food["heat_level"]>5]
 
@@ -42,3 +43,5 @@ def get_average_heat_level(spicy_foods):
 def create_spicy_food(spicy_foods, spicy_food):
     spicy_foods.append(spicy_food)
     return spicy_foods
+
+
